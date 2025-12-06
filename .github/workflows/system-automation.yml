@@ -1,10 +1,8 @@
 name: System Automation
-
 on:
   push:
     branches: [ main ]
   workflow_dispatch:
-
 jobs:
   linux-automation:
     name: Linux Automation
@@ -34,7 +32,6 @@ jobs:
           output/
           logs/
         retention-days: 7
-
   windows-automation:
     name: Windows Automation
     runs-on: windows-latest
